@@ -7,10 +7,8 @@ import { Redirect,withRouter } from 'react-router';
 
 
 
-function Cost({isAuthenticated}) {
-    if (isAuthenticated == false) {
-        this.history.push('/login')
-    }
+function Cost() {
+  
     const [fields, handleFieldChange] = useFormFields({
         name: "",
         tar: "",
@@ -303,4 +301,4 @@ function Cost({isAuthenticated}) {
         </div>
     );
 }
-export default withRouter(Cost)
+export default Cost

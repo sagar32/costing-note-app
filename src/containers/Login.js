@@ -36,7 +36,7 @@ class Login extends Component {
           setTimeout(()=>{
             this.setState({ setIsLoading: false, redirect: true,error:false });
           },500)
-          this.props.history.push('/cost')
+   
           console.log('loged in')
         } else {
           this.setState({error:'Invalid Credentials'})
@@ -100,4 +100,4 @@ class Login extends Component {
   }
 }
 
-export default withRouter(Login);
+export default Login;

@@ -5,6 +5,8 @@ import "./App.css";
 import Routes from "./Routes";
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
+import Cost from "./containers/Cost";
+import Login from "./containers/Login";
 
 
 class App extends React.Component{
@@ -35,9 +37,15 @@ class App extends React.Component{
   
             </span>
           </div>
-               
-        
-        <Routes isAuthenticated={this.state.isAuthenticated} changeAuthState={(newAuthState)=>this.changeAuthState(newAuthState)} />
+          {
+              this.state.isAuthenticated
+              ?      
+              <Cost isAuthenticated={this.state.isAuthenticated} changeAuthState={(newAuthState)=>this.changeAuthState(newAuthState)}/>
+              :
+              <Login isAuthenticated={this.state.isAuthenticated} changeAuthState={(newAuthState)=>this.changeAuthState(newAuthState)}/>
+          }
+
+        {/* <Routes isAuthenticated={this.state.isAuthenticated} changeAuthState={(newAuthState)=>this.changeAuthState(newAuthState)} /> */}
       </div>
     );
   }
