@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/costing-note-app/precache-manifest.a23b02462ca1a121ceabf0d86e774efa.js"
+  "/costing-note-app/precache-manifest.5b9157716ad1731e817d52d63e60fd45.js"
 );
 
 self.addEventListener('message', (event) => {

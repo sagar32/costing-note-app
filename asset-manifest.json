@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/costing-note-app/static/css/main.d4c2fb1a.chunk.css",
-    "main.js": "/costing-note-app/static/js/main.22082d49.chunk.js",
-    "main.js.map": "/costing-note-app/static/js/main.22082d49.chunk.js.map",
+    "main.js": "/costing-note-app/static/js/main.90ba09b5.chunk.js",
+    "main.js.map": "/costing-note-app/static/js/main.90ba09b5.chunk.js.map",
     "runtime-main.js": "/costing-note-app/static/js/runtime-main.6cd5defc.js",
     "runtime-main.js.map": "/costing-note-app/static/js/runtime-main.6cd5defc.js.map",
-    "static/js/2.a51debb3.chunk.js": "/costing-note-app/static/js/2.a51debb3.chunk.js",
-    "static/js/2.a51debb3.chunk.js.map": "/costing-note-app/static/js/2.a51debb3.chunk.js.map",
+    "static/js/2.d5dfd0e3.chunk.js": "/costing-note-app/static/js/2.d5dfd0e3.chunk.js",
+    "static/js/2.d5dfd0e3.chunk.js.map": "/costing-note-app/static/js/2.d5dfd0e3.chunk.js.map",
     "index.html": "/costing-note-app/index.html",
-    "precache-manifest.a23b02462ca1a121ceabf0d86e774efa.js": "/costing-note-app/precache-manifest.a23b02462ca1a121ceabf0d86e774efa.js",
+    "precache-manifest.5b9157716ad1731e817d52d63e60fd45.js": "/costing-note-app/precache-manifest.5b9157716ad1731e817d52d63e60fd45.js",
     "service-worker.js": "/costing-note-app/service-worker.js",
     "static/css/main.d4c2fb1a.chunk.css.map": "/costing-note-app/static/css/main.d4c2fb1a.chunk.css.map",
-    "static/js/2.a51debb3.chunk.js.LICENSE.txt": "/costing-note-app/static/js/2.a51debb3.chunk.js.LICENSE.txt"
+    "static/js/2.d5dfd0e3.chunk.js.LICENSE.txt": "/costing-note-app/static/js/2.d5dfd0e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6cd5defc.js",
-    "static/js/2.a51debb3.chunk.js",
+    "static/js/2.d5dfd0e3.chunk.js",
     "static/css/main.d4c2fb1a.chunk.css",
-    "static/js/main.22082d49.chunk.js"
+    "static/js/main.90ba09b5.chunk.js"
   ]
 }

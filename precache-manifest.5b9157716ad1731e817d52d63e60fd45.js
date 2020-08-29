@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3481d8c25b54d4bc4a5ae5e4f4668da0",
+    "revision": "de0be0c0801e22a7d604908cc51195da",
     "url": "/costing-note-app/index.html"
   },
   {
-    "revision": "b7beaf7b9c1ab403598f",
+    "revision": "1a9414d1cbb1a12f3f00",
     "url": "/costing-note-app/static/css/main.d4c2fb1a.chunk.css"
   },
   {
-    "revision": "fb20d355f941c5e4a8fb",
-    "url": "/costing-note-app/static/js/2.a51debb3.chunk.js"
+    "revision": "74cceb27e93add39fd27",
+    "url": "/costing-note-app/static/js/2.d5dfd0e3.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/costing-note-app/static/js/2.a51debb3.chunk.js.LICENSE.txt"
+    "url": "/costing-note-app/static/js/2.d5dfd0e3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b7beaf7b9c1ab403598f",
-    "url": "/costing-note-app/static/js/main.22082d49.chunk.js"
+    "revision": "1a9414d1cbb1a12f3f00",
+    "url": "/costing-note-app/static/js/main.90ba09b5.chunk.js"
   },
   {
     "revision": "813899e2feaa6c43ef47",
