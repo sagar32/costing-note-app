@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import { FormGroup, FormControl, ControlLabel, Row,Col } from "react-bootstrap";
 import { useFormFields } from "../libs/hooksLib";
 import LoaderButton from "../components/LoaderButton";
+import { Redirect,withRouter } from 'react-router';
 
 
 
-export default function Cost() {
 
+function Cost({isAuthenticated}) {
+    if (isAuthenticated == false) {
+        this.history.push('/login')
+    }
     const [fields, handleFieldChange] = useFormFields({
         name: "",
         tar: "",
@@ -299,3 +303,4 @@ export default function Cost() {
         </div>
     );
 }
+export default withRouter(Cost)

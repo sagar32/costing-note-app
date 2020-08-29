@@ -2,7 +2,7 @@ import React, { useState, Component } from "react";
 import { FormGroup, FormControl, ControlLabel,Alert } from "react-bootstrap";
 import "./Login.css";
 import LoaderButton from "../components/LoaderButton";
-import { Redirect } from 'react-router';
+import { Redirect,withRouter } from 'react-router';
 // import Cost from "./Cost";
 // import { render } from "@testing-library/react";
 
@@ -36,6 +36,7 @@ class Login extends Component {
           setTimeout(()=>{
             this.setState({ setIsLoading: false, redirect: true,error:false });
           },500)
+          this.props.history.push('/cost')
           console.log('loged in')
         } else {
           this.setState({error:'Invalid Credentials'})
@@ -55,6 +56,9 @@ class Login extends Component {
   render() {
 
     return (
+    
+        this.props.isAuthenticated == false &&
+      
       <div className="Login">
 
         <form onSubmit={this.handleSubmit}>
@@ -90,10 +94,10 @@ class Login extends Component {
         <Alert danger>{this.state.error}</Alert>
         }
         </form>
-        {this.state.redirect && <Redirect to="/cost"/>}
+        {/* {this.state.redirect && <Redirect to="/cost"/>} */}
       </div>
     );
   }
 }
 
-export default Login;
+export default withRouter(Login);

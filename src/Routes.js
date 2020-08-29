@@ -6,16 +6,15 @@ import Cost from "./containers/Cost.jsx";
 export default function Routes({changeAuthState,isAuthenticated}) {
     return (
         <Switch>
-            <Route exact path="/">
-                <Login changeAuthState={(newAuthState)=>changeAuthState(newAuthState)} />
+            <Route  path="/cost">
+                <Cost isAuthenticated={isAuthenticated} changeAuthState={(newAuthState)=>changeAuthState(newAuthState)} />
             </Route>
-            {
-                isAuthenticated &&
-                    <Route exact path="/cost">
-                        <Cost isAuthenticated={isAuthenticated} changeAuthState={(newAuthState)=>changeAuthState(newAuthState)} />
-                    </Route>
+            <Route path="/">
+                <Login isAuthenticated={isAuthenticated} changeAuthState={(newAuthState)=>changeAuthState(newAuthState)} />
+            </Route>
+       
 
-            }
+            
         </Switch>
     );
 }
