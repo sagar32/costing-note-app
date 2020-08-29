@@ -1,5 +1,5 @@
 import React, { useState, Component } from "react";
-import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { FormGroup, FormControl, ControlLabel,Alert } from "react-bootstrap";
 import "./Login.css";
 import LoaderButton from "../components/LoaderButton";
 import { Redirect } from 'react-router';
@@ -14,7 +14,8 @@ class Login extends Component {
       username: "",
       password: "",
       isLoading: false,
-      redirect: false
+      redirect: false,
+      error:false,
     };
   }
 
@@ -27,9 +28,19 @@ class Login extends Component {
     event.preventDefault();
      try {
       this.setState({ setIsLoading: true });
-      if (this.setState.username == null &&
-        this.setState.password == null ) {
-        this.setState({ setIsLoading: false, redirect: true });
+      if (this.state.username != null &&
+        this.state.password != null ) {
+        if (this.state.username == "dhaval" && this.state.password == "dhaval123") {
+          
+          this.props.changeAuthState(true)
+          setTimeout(()=>{
+            this.setState({ setIsLoading: false, redirect: true,error:false });
+          },500)
+          console.log('loged in')
+        } else {
+          this.setState({error:'Invalid Credentials'})
+          console.log('failed loged in')
+        }
 
 
       }
@@ -74,6 +85,10 @@ class Login extends Component {
           >
             Login
                </LoaderButton>
+        {
+          this.state.error &&
+        <Alert danger>{this.state.error}</Alert>
+        }
         </form>
         {this.state.redirect && <Redirect to="/cost"/>}
       </div>
