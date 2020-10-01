@@ -30,7 +30,7 @@ class Login extends Component {
       this.setState({ setIsLoading: true });
       if (this.state.username != null &&
         this.state.password != null ) {
-        if (this.state.username == "dhaval" && this.state.password == "dhaval123") {
+        if (this.state.username == "hd" && this.state.password == "hd") {
           
           this.props.changeAuthState(true)
           setTimeout(()=>{

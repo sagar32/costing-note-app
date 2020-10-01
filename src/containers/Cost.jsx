@@ -269,9 +269,9 @@ function Cost() {
                     </thead>
                     <tbody>
                         {
-                            storedRecords &&storedRecords.length>0&& storedRecords.map((record)=>{
+                            storedRecords &&storedRecords.length>0&& storedRecords.map((record,i)=>{
                                 return (
-                                    <tr>
+                                    <tr key={i}>
                                         <td>
                                             {
                                                 record.name
@@ -284,12 +284,12 @@ function Cost() {
                                         <td>{ record.panno }</td>
                                         <td>{ record.rate1 }</td>
                                         <td>{ record.rate2 }</td>
-                                        <td>{ parseInt(record.worpWeight).toFixed(4) }</td>
-                                        <td>{ parseInt(record.weffWeight).toFixed(4) }</td>
-                                        <td>{parseInt( record.resultRate1).toFixed(4) }</td>
-                                        <td>{ parseInt(record.resultRate2).toFixed(4) }</td>
-                                        <td>{ parseInt(record.totalweight).toFixed(4) }</td>
-                                        <td>{parseInt( record.totalrate).toFixed(4) }</td>
+                                        <td>{ parseFloat(record.worpWeight).toFixed(2) }</td>
+                                        <td>{ parseFloat(record.weffWeight).toFixed(2) }</td>
+                                        <td>{parseFloat( record.resultRate1).toFixed(2) }</td>
+                                        <td>{ parseFloat(record.resultRate2).toFixed(2) }</td>
+                                        <td>{ parseFloat(record.totalweight).toFixed(2) }</td>
+                                        <td>{parseFloat( record.totalrate).toFixed(2) }</td>
                                     </tr>
                                 )
                             })
