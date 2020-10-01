@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/costing-note-app/static/css/main.ef144ff3.chunk.css",
+    "main.js": "/costing-note-app/static/js/main.6d99a6ef.chunk.js",
+    "main.js.map": "/costing-note-app/static/js/main.6d99a6ef.chunk.js.map",
+    "runtime-main.js": "/costing-note-app/static/js/runtime-main.6cd5defc.js",
+    "runtime-main.js.map": "/costing-note-app/static/js/runtime-main.6cd5defc.js.map",
+    "static/js/2.d5dfd0e3.chunk.js": "/costing-note-app/static/js/2.d5dfd0e3.chunk.js",
+    "static/js/2.d5dfd0e3.chunk.js.map": "/costing-note-app/static/js/2.d5dfd0e3.chunk.js.map",
+    "index.html": "/costing-note-app/index.html",
+    "precache-manifest.4cf1a77472fb82d2892ccc04724d0a2a.js": "/costing-note-app/precache-manifest.4cf1a77472fb82d2892ccc04724d0a2a.js",
+    "service-worker.js": "/costing-note-app/service-worker.js",
+    "static/css/main.ef144ff3.chunk.css.map": "/costing-note-app/static/css/main.ef144ff3.chunk.css.map",
+    "static/js/2.d5dfd0e3.chunk.js.LICENSE.txt": "/costing-note-app/static/js/2.d5dfd0e3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6cd5defc.js",
+    "static/js/2.d5dfd0e3.chunk.js",
+    "static/css/main.ef144ff3.chunk.css",
+    "static/js/main.6d99a6ef.chunk.js"
+  ]
+}

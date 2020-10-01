@@ -53,7 +53,7 @@ function Cost() {
             let wow = (fields.tar * fields.denier1 * 110) / 9000000;
             setWorpWeight(wow);
 
-            let wew = (fields.pick * fields.panno * fields.denier2 * 110) / 9000000;
+            let wew = (fields.pick * fields.panno * fields.denier2 * 106) / 9000000;
             setWeffWeight(wew);
 
             let r1 = (wow * fields.rate1) / 100;
@@ -68,14 +68,16 @@ function Cost() {
             let tr = (r1 + r2);
             setTotalRate(tr);
             
+            setTimeout(()=>{
+                storedRecords.push({
+                    ...fields, weffWeight: wew.toString(), worpWeight: wow.toString(), resultRate1: r1.toString(),
+                    resultRate2: r2.toString(), totalweight: tw.toString(), totalrate: tr.toString()
+                });
+                localStorage.setItem('storedRecords', JSON.stringify(storedRecords));
+                setStoredRecords(storedRecords.reverse())
+                setIsLoading(false)
+            },1000);
             
-            storedRecords.push({
-                ...fields, weffWeight: wew.toString(), worpWeight: wow.toString(), resultRate1: r1.toString(),
-                resultRate2: r2.toString(), totalweight: tw.toString(), totalrate: tr.toString()
-            });
-            localStorage.setItem('storedRecords', JSON.stringify(storedRecords));
-            setStoredRecords(storedRecords.reverse())
-            setIsLoading(false)
 
         } catch (e) {
             console.log(e);
